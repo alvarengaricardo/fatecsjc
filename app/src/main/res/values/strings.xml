@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fatec SJC</string>
+    <string name="app_namelong">FATEC São José dos Campos</string>
+    <string name="erroRequerimento">Falha ao enviar requerimento. Tente novamente.</string>
+    <string name="sucessoRequerimento">Requerimento enviado com sucesso.</string>
+    <string name="erroEmail"></string>
+    <string name="sucessoEmail">E-mail enviado com sucesso.</string>
+    <string name="versao">Versão 1.00</string>
+    <string name="desenvolvido">Desenvolvido por: Ricardo R Alvarenga</string>
+    <string name="orientador">Orientador: M.e Emanuel Mineda</string>
+    <string name="aprovado">Aprovado por: M.e Eduardo Sakaue</string>
+    <string name="main_item_1">Requerimentos</string>
+    <string name="main_item_2">Perfil</string>
+    <string name="main_item_3">Sobre</string>
+    <string name="main_item_4">Logout</string>
+    <string name="req_item_1">Atestado de Matrícula</string>
+    <string name="req_item_2">Histórico Escolar</string>
+    <string name="req_item_3">Certificado de Conclusão de Curso</string>
+    <string name="req_item_4">Consultar Requerimentos</string>
+    <string name="req_item_5">Voltar</string>
+    <string name="perfil_item_1">Meus Dados</string>
+    <string name="perfil_item_2">Dados Complementares</string>
+    <string name="perfil_item_3">Excluir Usuário</string>
+    <string name="perfil_item_4">Voltar</string>
+</resources>

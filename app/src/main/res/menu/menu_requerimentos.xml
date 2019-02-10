@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/req_item_1"
+        android:id="@+id/req_item1_id"/>
+
+    <item
+        android:title="@string/req_item_2"
+        android:id="@+id/req_item2_id"/>
+
+    <item
+        android:title="@string/req_item_3"
+        android:id="@+id/req_item3_id"/>
+
+    <item
+        android:title="@string/req_item_4"
+        android:id="@+id/req_item4_id"/>
+
+    <item
+        android:title="@string/req_item_5"
+        android:id="@+id/req_item5_id"/>
+
+</menu>

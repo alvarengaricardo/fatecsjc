@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3219ff</color>
+    <color name="colorPrimaryDark">#35298c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="corBotao">#C0C0C0</color>
+    <color name="corBotaoDestaque">#B0E0E6</color>
+    <color name="corBotaoAzul">#007FFF</color>
+    <color name="branco">#FFFFFF</color>
+</resources>

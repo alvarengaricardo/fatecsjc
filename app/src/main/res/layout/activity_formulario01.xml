@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Atestado de Matrícula"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editRg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="RG"
+        android:inputType="number"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editRg"
+        android:layout_alignStart="@+id/editRg"
+        android:layout_below="@+id/editRg"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editSemestre"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Semestre"
+        android:inputType="number"
+        android:layout_below="@+id/editTelefone"
+        android:layout_alignStart="@+id/editTelefone" />
+
+    <EditText
+        android:id="@+id/editTurno"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Turno"
+        android:inputType="text"
+        android:layout_below="@+id/editTelefone"
+        android:layout_toEndOf="@+id/editSemestre" />
+
+    <EditText
+        android:id="@+id/editOutrasInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Outras Informações"
+        android:inputType="text"
+        android:layout_below="@+id/grupo"
+        android:layout_alignStart="@+id/grupo"
+        android:layout_alignEnd="@+id/grupo" />
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao"
+        android:text="Confirmar"
+        android:layout_alignBaseline="@+id/btnVoltar"
+        android:layout_alignBottom="@+id/btnVoltar"
+        android:layout_alignEnd="@+id/grupo" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editOutrasInfo"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/botaodestaque"
+        android:text="Voltar" />
+
+
+    <RadioGroup
+        android:id="@+id/grupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSemestre"
+        android:layout_alignStart="@+id/editSemestre"
+        android:layout_alignEnd="@+id/editTelefone">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonSimples"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTurno"
+            android:layout_below="@+id/editTurno"
+            android:text="Simples"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonSimplesPR"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editOutrasInfo"
+            android:layout_below="@+id/radioButtonSimples"
+            android:text="Simples com Portaria de Reconhecimento"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonEstagio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButtonPrevisao"
+            android:layout_toEndOf="@+id/radioButtonHorario"
+            android:text="para Estágio"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonPrevisao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButtonSimplesPR"
+            android:layout_below="@+id/radioButtonSimplesPR"
+            android:text="com Previsão de Conclusão"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonDisciplinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTurno"
+            android:layout_below="@+id/editTurno"
+            android:text="com Disciplinas em Curso"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonConclusao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButtonHorario"
+            android:layout_below="@+id/radioButtonHorario"
+            android:text="de Conclusão de Curso"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonHorario"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButtonPrevisao"
+            android:layout_below="@+id/radioButtonPrevisao"
+            android:text="com Horário de Aulas"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>
